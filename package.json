@@ -1,0 +1,26 @@
+{
+  "name": "contactbook-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NLinh1702/B1910092-Le-Nhut-Linh-Backend-Contact.git"
+  },
+  "keywords": [
+    "Backend"
+  ],
+  "author": "NhutLinh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NLinh1702/B1910092-Le-Nhut-Linh-Backend-Contact/issues"
+  },
+  "homepage": "https://github.com/NLinh1702/B1910092-Le-Nhut-Linh-Backend-Contact#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
