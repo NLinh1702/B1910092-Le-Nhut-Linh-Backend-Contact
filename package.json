@@ -20,9 +20,11 @@
   },
   "homepage": "https://github.com/NLinh1702/B1910092-Le-Nhut-Linh-Backend-Contact#readme",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "mongodb": "^5.0.1"
+    "mongodb": "^5.0.1",
+    "mongoose": "^6.9.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

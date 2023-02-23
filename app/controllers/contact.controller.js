@@ -18,10 +18,6 @@ exports.create = async (req, res, next) => {
     }
 };
 
-/*exports.findAll = (req,res) => {
-    res.send({message: "findAll handler"});
-};*/
-
 exports.findAll = async(req, res, next) => {
     let documents = [];
 
@@ -43,10 +39,6 @@ exports.findAll = async(req, res, next) => {
     return res.send(documents);
 }
 
-
-/*exports.findOne = (req, res) => {
-    res.send({message: "findOne handler"});
-};*/
 exports.findOne = async (req, res, next) => {
     try {
         const contactService = new ContactService(MongoDB.client);
@@ -65,10 +57,6 @@ exports.findOne = async (req, res, next) => {
     }
 };
 
-/*exports.update = (req, res) => {
-    res.send({message: "update handler"});
-};
-*/
 exports.update = async (req, res, next) => {
     if(Object.keys(req.body).length === 0) {
         return next(new ApiError(400, 'Data to update can not be empty'));
@@ -89,9 +77,6 @@ exports.update = async (req, res, next) => {
         );
     }
 };
-/*exports.delete = (req, res) => {
-    res.send({message:"delete handler"});
-};*/
 
 exports.delete = async (req, res, next) => {
     try {
@@ -111,16 +96,6 @@ exports.delete = async (req, res, next) => {
     }
 };
 
-
-/*exports.deleteAll = (req, res) => {
-    res.send({message: "deleteAll handler"});
-};*/
-
-/*exports.findAllFavorite = (req, res) => {
-    res.send({message: "findAllFavorite handler"});
-}*/
-
-
 exports.findAllFavorite = async (_req, res, next) => {
     try {
         const contactService = new ContactService(MongoDB.client);
@@ -135,8 +110,6 @@ exports.findAllFavorite = async (_req, res, next) => {
         );
     }
 };
-
-
 
 exports.deleteAll = async (req, res) => {
     try {
